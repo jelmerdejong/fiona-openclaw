@@ -1,0 +1,5 @@
+# Don't commit sensitive or runtime state
+.openclaw/
+memory/harvester-state.json
+*.sqlite
+*.sqlite-journal
