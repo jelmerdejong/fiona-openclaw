@@ -24,5 +24,12 @@ _Last updated: 2026-04-02_
 
 ## Known Issues
 
-- **Session harvester broken:** Haiku cron sessions can't exec shell commands (approval required, no one to approve). Needs fix — either use `read` tool or set exec allow-always for read-only paths.
-- **MEMORY.md was empty until manual harvest** on April 2 — everything from Day 1 was only in transcripts.
+- ~~Session harvester broken~~ — **Fixed April 2.** Harvester rewritten to use `exec ls` + `read`. Exec policy fixed: `tools.exec.security: "full"` + `ask: "off"`.
+- ~~MEMORY.md was empty until manual harvest~~ — **Fixed April 2.** Day 1 transcript manually rescued.
+
+## Exec Policy (Important)
+
+Three layers control exec, all must be permissive:
+1. **`tools.exec.security`** — master switch (`"full"` = no allowlist). Protected path, CLI only.
+2. **`tools.exec.ask`** — approval prompts (`"off"` = never ask)
+3. **`exec-approvals.json`** — per-command grants (currently empty, security=full bypasses it)
