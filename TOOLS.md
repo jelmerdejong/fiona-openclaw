@@ -22,12 +22,12 @@
 - **Barry's** — when traveling (NYC, London, Stockholm, Zurich)
 
 ### Communication
-- **Telegram** — setting up as primary Fiona channel
-  - **Group:** "Fiona HQ" (chat_id: -1003856841664)
-  - **Topics:** General, Library 📚, Wardrobe 👔, Places 📍
-  - **Status:** Group whitelisted, bot admin rights set, topics functional
-  - **Config:** BotFather `can_read_all_group_messages: true`, `groupPolicy: "allowlist"`
-  - **Integration:** Per-topic system prompts supported in OpenClaw config
+- **Telegram** — primary Fiona channel (active)
+  - **Group:** "Fiona HQ" (chat_id: -1003856841664, supergroup with Topics enabled)
+  - **Topics:** General (id:1), Library 📚 (id:3), Wardrobe 👔 (id:11), Places 📍 (id:13)
+  - **Status:** Group fully functional, all topics receive messages, bot is admin
+  - **Config:** BotFather `can_read_all_group_messages: true`, openclaw config has `groupPolicy: "allowlist"` + `requireMention: false`
+  - **Note:** Per-topic system prompts supported in OpenClaw config but not yet configured per topic
 - **WhatsApp** — personal messaging (monitoring for lingering replies TBD)
 - **iMessage** — also uses
 - **Email** — TBD integration
@@ -46,7 +46,8 @@
 - Host: fiona-ubuntu-8gb-hel1-2 (Hetzner, Helsinki)
 
 ## TBD Integrations
-- [ ] Telegram setup
+- [x] Telegram setup (DONE: group + topics working, April 3)
+- [ ] Telegram per-topic system prompts (Library, Wardrobe, Places)
 - [ ] Email access
 - [ ] Calendar API
 - [ ] Garmin Connect API
