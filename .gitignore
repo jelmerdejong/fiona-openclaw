@@ -3,3 +3,6 @@
 memory/harvester-state.json
 *.sqlite
 *.sqlite-journal
+
+# Obsidian vaults (separate repos)
+vaults/
