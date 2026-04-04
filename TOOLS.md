@@ -23,6 +23,11 @@
 
 ### Communication
 - **Telegram** — setting up as primary Fiona channel
+  - **Group:** "Fiona HQ" (chat_id: -1003856841664)
+  - **Topics:** General, Library 📚, Wardrobe 👔, Places 📍
+  - **Status:** Group whitelisted, bot admin rights set, topics functional
+  - **Config:** BotFather `can_read_all_group_messages: true`, `groupPolicy: "allowlist"`
+  - **Integration:** Per-topic system prompts supported in OpenClaw config
 - **WhatsApp** — personal messaging (monitoring for lingering replies TBD)
 - **iMessage** — also uses
 - **Email** — TBD integration
