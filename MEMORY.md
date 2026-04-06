@@ -45,5 +45,6 @@ Three layers control exec, all must be permissive:
 ## Obsidian Vaults (Initialized April 3)
 
 - **Library vault:** 451 books from Goodreads export. Enhanced with fiction/non-fiction type, 3-7 topic tags, summaries, wiki-links. Created 331 author pages, 37 series pages, 34 topic pages. All committed + pushed.
-- **Wardrobe & Places vaults:** Created but empty — awaiting design discussion
+- **Wardrobe vault:** (Activated April 6) Structure: Items, Outfits, Style, Templates. **New:** Stores section with city folders (Amsterdam, New York, London, Stockholm, Zurich, Online). Store template tracks location, brands, price range, type, notes, visit history. Driven by Jelmer's travel-linked wardrobe hunting via @dieworkwear recommendations.
+- **Places vault:** Created but empty — awaiting design discussion
 - **GitHub PAT:** Updated to cover all 3 vault repos
