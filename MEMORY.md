@@ -1,6 +1,6 @@
 # MEMORY.md - Curated Long-term Memory
 
-_Last updated: 2026-04-04_
+_Last updated: 2026-04-07 (end-of-day maintenance)_
 
 ## Setup & Infrastructure (2026-04-01)
 
