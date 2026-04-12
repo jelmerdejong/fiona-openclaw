@@ -40,6 +40,10 @@
 - No current tracker (wants to replace Goodreads)
 - Fiona will serve as book tracker — read, reading, want-to-read
 
+### Finances & Tax
+- **STP** — personal tax filing contact
+- **HLB** — corporate tax filings contact
+
 ## Infrastructure
 - Fiona runs on a **VPS** (no GUI, no direct device access)
 - All integrations via CLI/API bridges

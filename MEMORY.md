@@ -1,6 +1,6 @@
 # MEMORY.md - Curated Long-term Memory
 
-_Last updated: 2026-04-07 (end-of-day maintenance)_
+_Last updated: 2026-04-12 (session harvester update)_
 
 ## Setup & Infrastructure (2026-04-01)
 
@@ -21,6 +21,7 @@ _Last updated: 2026-04-07 (end-of-day maintenance)_
 | Session harvester | Every 2h, 08–22 Amsterdam (Haiku) | Extract facts from transcripts |
 | Git backup | Every 6h (Haiku) | Push workspace to GitHub |
 | Daily maintenance | 23:00 Amsterdam (Haiku) | Summarize, curate, trim, learn |
+| Tax filing reminder | 2026-04-13 09:00 Amsterdam (cron) | STP (personal tax), HLB (corporate filings) |
 
 ## Known Issues
 
