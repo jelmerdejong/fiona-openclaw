@@ -21,11 +21,12 @@ _Last updated: 2026-04-12 (session harvester update)_
 | Session harvester | Every 2h, 08–22 Amsterdam (Haiku) | Extract facts from transcripts |
 | Git backup | Every 6h (Haiku) | Push workspace to GitHub |
 | Daily maintenance | 23:00 Amsterdam (Haiku) | Summarize, curate, trim, learn |
-| Tax filing reminder | 2026-04-13 09:00 Amsterdam (cron) | STP (personal tax), HLB (corporate filings) |
+| Tax filing reminder | 2026-04-13 09:00 Amsterdam (cron) | STP (personal tax), HLB (corporate filings) | **ISSUE: Failed to deliver**
 
 ## Known Issues
 
 - ~~Session harvester broken~~ — **Fixed April 2.** Harvester rewritten to use `exec ls` + `read`. Exec policy fixed: `tools.exec.security: "full"` + `ask: "off"`.
+- **Cron reminder delivery failing (April 13)** — Tax filing reminder set for 09:00 Amsterdam but did not deliver to Telegram. Job `f3a0e4a1-ca52-460f-b027-7751620e69ff` created successfully but message never sent. May indicate broader Telegram integration issue.
 - ~~MEMORY.md was empty until manual harvest~~ — **Fixed April 2.** Day 1 transcript manually rescued.
 
 ## Exec Policy (Important)
@@ -41,7 +42,16 @@ Three layers control exec, all must be permissive:
 - **Topics:** General (id:1), Library 📚 (id:3), Wardrobe 👔 (id:11), Places 📍 (id:13)
 - **Status:** Bot can send messages to group, but **NOT receiving messages**
 - **Root cause unresolved (April 3):** Long-polling never picks up group messages. IPv6 timeout on startup may be related. Multiple restarts did not fix. May need OpenClaw docs review or bug report.
-- **TODO:** Debug Telegram forum/topic group support; check per-topic system prompts configuration
+- **Note (April 13):** Cron announcements to Telegram also failing. Broader delivery issue suspected.
+- **TODO:** Debug Telegram forum/topic group support; check per-topic system prompts configuration; debug cron-to-telegram delivery
+
+## X.com (Twitter) Integration (In Progress — April 11–13)
+
+- **Use case:** Jelmer wants read-only access to X/Twitter, prefers official API for reliability
+- **API status:** Official X API pay-per-use ($0.005/read, $0.01/post) since Feb 2026; no free tier
+- **Alternatives reviewed:** x-tweet-fetcher (free, Nitter-based); Xquik ($0.00015/read, 33x cheaper)
+- **Plan:** Official X API setup via console.x.com → Bearer Token → `openclaw-skills-x-twitter` skill
+- **Status:** Awaiting Jelmer's Bearer Token
 
 ## Obsidian Vaults (Initialized April 3)
 
