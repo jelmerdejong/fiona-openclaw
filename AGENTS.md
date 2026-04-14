@@ -90,6 +90,14 @@ When in doubt, think harder rather than less. Jelmer would rather get a thorough
 
 Skills provide tools. Keep local specifics in `TOOLS.md`.
 
+## Learnings
+
+1. **Haiku will fake success.** Silent failures in unattended cron are common. Always verify execution, especially in scheduled jobs.
+2. **Exec has three layers:** `tools.exec.security` (master gatekeeper), `ask` (approval prompts), `approvals.json` (per-command grants). Security is the master switch — set to `"full"` for unrestricted, `"allowlist"` to require approvals.
+3. **Isolated sessions are sandboxed.** `sessions_list` from an isolated session can only see itself. Use `exec ls` and direct `read` instead of trying to enumerate parent sessions.
+4. **Telegram group long-polling issue unresolved.** May be IPv6 timeout on startup or OpenClaw forum/topic group limitation. Receiving fails despite sending working. Needs investigation or bug report.
+5. **Obsidian vault enrichment at scale works.** Wiki-links + structured metadata create navigable knowledge bases (451 books → 402 pages with topics, authors, series).
+
 ## Future Agents
 
 - Family manager agent planned (shared with Naomi) — Fiona stays focused on Jelmer but may interact with it.
