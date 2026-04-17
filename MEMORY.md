@@ -45,13 +45,15 @@ Three layers control exec, all must be permissive:
 - **Note (April 13):** Cron announcements to Telegram also failing. Broader delivery issue suspected.
 - **TODO:** Debug Telegram forum/topic group support; check per-topic system prompts configuration; debug cron-to-telegram delivery
 
-## X.com (Twitter) Integration (In Progress — April 11–13)
+## X.com (Twitter) Integration (Active — April 17)
 
-- **Use case:** Jelmer wants read-only access to X/Twitter, prefers official API for reliability
-- **API status:** Official X API pay-per-use ($0.005/read, $0.01/post) since Feb 2026; no free tier
-- **Alternatives reviewed:** x-tweet-fetcher (free, Nitter-based); Xquik ($0.00015/read, 33x cheaper)
-- **Plan:** Official X API setup via console.x.com → Bearer Token → `openclaw-skills-x-twitter` skill
-- **Status:** Awaiting Jelmer's Bearer Token
+- **Status:** ✅ Working! Official X API pay-per-use connected.
+- **Skill:** `twitter-x-api` installed at `skills/twitter-x-api/`
+- **Auth:** Bearer Token stored in `~/.openclaw/.env`, `~/.config/twitter/credentials.json`, and `~/.bashrc`
+- **Capabilities:** Read tweets, user profiles, search, show tweet details, analytics
+- **Usage:** `python3 skills/twitter-x-api/scripts/tweet.py <command>` (needs TWITTER_BEARER_TOKEN env)
+- **Cost:** $0.005/read, $0.01/profile lookup (pay-per-use, no monthly fee)
+- **Note:** Search min count is 10 (API limitation). Write operations need additional OAuth keys (not configured — read-only for now).
 
 ## Obsidian Vaults (Initialized April 3)
 
