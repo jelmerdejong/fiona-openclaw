@@ -1,6 +1,6 @@
 # MEMORY.md - Curated Long-term Memory
 
-_Last updated: 2026-04-12 (session harvester update)_
+_Last updated: 2026-04-17 (wardrobe vault & Derek Guy research library complete)_
 
 ## Setup & Infrastructure (2026-04-01)
 
@@ -58,6 +58,14 @@ Three layers control exec, all must be permissive:
 ## Obsidian Vaults (Initialized April 3)
 
 - **Library vault:** 451 books from Goodreads export. Enhanced with fiction/non-fiction type, 3-7 topic tags, summaries, wiki-links. Created 331 author pages, 37 series pages, 34 topic pages. All committed + pushed.
-- **Wardrobe vault:** (Activated April 6) Structure: Items, Outfits, Style, Templates, Stores. Refined heritage casual style (quality, texture, brown over black). 16 items documented: 4 owned (Sugar Cane jeans, Samurai jeans, Real McCoy's M-1943, Faherty sweater), 12 to-buy (focus: NN07 Aden chinos, Proper Cloth OCBD, RRL Chambray, orSlow 107 jeans, Red Wing Weekender chukka). 8 stores across Amsterdam, NYC, London, Stockholm, Zurich with location details and brand notes. Driven by Derek Guy (@dieworkwear) recommendations and heritage menswear exploration.
+- **Wardrobe vault:** (April 6–17) Major restructure complete:
+  - Split Items/ into owned Items/ + Wish List/ (tag-based was hard to navigate)
+  - Added category sub-folders: Tops/, Bottoms/, Outerwear/, Shoes/, Accessories/
+  - Updated Item template: added `status` (keep/replace/donate/archive) + `replace_with` link
+  - Created Derek Guy Research Library: 391 blog articles from dieworkwear.com (2015–2026, 6,174 images), 57 from putthison.com, 27 threads from Thread Reader App (~1,100 images), 8 tweet pages. Total: ~1.1GB. Thread Reader App fully exhausted.
+  - Rach Corrine research: 12 tweet pages + 100-tweet digest from X API (19 style-relevant). No blog (Substack empty). Key finds: wardrobe staples list, ecru > white jeans, Kapital/Niceness brands.
+  - Loafer replacement research: Paraboot Reims (€380–420, chunky sole), Alden LHS (€550–650, refined), Grant Stone Traveler (€250–300, value). Preference: snuff/tobacco suede over leather.
+  - RRL Henley: Size L sold out at stuf-f.com; hunting alternatives (ralphlauren.nl, Cave & Post).
+  - Cron job created: weekly tweet pull Monday 10:00 Amsterdam (Derek Guy + Rach Corrine tweets, new Thread Reader threads).
 - **Places vault:** Created but empty — awaiting design discussion
 - **GitHub PAT:** Updated to cover all 3 vault repos
